@@ -1,6 +1,6 @@
 'use strict';
 const assert = require('assert')
-const translate = require('./parser.js').compute
+const translate = require('../src/parser.js').compute
 describe('#Translator test', function() {
   describe('Basic cases', function () {
 	  it("#1 Should be: '(123+567)' if passed: '123+567'", function () {
