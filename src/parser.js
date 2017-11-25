@@ -1,16 +1,14 @@
 'use strict'
-const ConstantNode = require('./node/ConstantNode.js')
-const SymbolNode = require('./node/SymbolNode.js')
-const OperatorNode = require('./node/OperatorNode.js')
-const ParenthesisNode = require('./node/ParenthesisNode.js')
-const LatexFunctionNode = require('./node/LatexFunctionNode.js')
-const AbsNode = require('./node/AbsNode.js')
-const RootNode = require('./node/RootNode.js')
-const LogNode = require('./node/LogNode.js')
-const EqNode = require('./node/EqNode.js')
-const errors = require('../../error')
-const EngineError = require('../../error').EngineError
-const _ = require('lodash')
+const ConstantNode = require('./nodes/constant.js')
+const SymbolNode = require('./nodes/symbol.js')
+const OperatorNode = require('./nodes/operator.js')
+const ParenthesisNode = require('./nodes/parenthesis.js')
+const LatexFunctionNode = require('./nodes/latex-function.js')
+const AbsNode = require('./nodes/abs.js')
+const RootNode = require('./nodes/root.js')
+const LogNode = require('./nodes/log.js')
+const EqNode = require('./nodes/eq.js')
+const _ = require("lodash")
 
 const TOKENTYPE = {
 	NULL: 0,
@@ -381,8 +379,9 @@ function parseStart(){
 	expression = expression.replace(/X/g, 'x')
 	expression = expression.replace(/\s/g, '')
 	expression = _.trim(expression)
-	first()
-	getToken()
+    first()
+    
+    getToken()
 	var node = parseBlock()
 	return node
 }
@@ -757,10 +756,7 @@ function parseEnd(){
 
 function compute(exp){
 	if(hasChinese(exp)){
-		throw new EngineError({
-			errorType: "CHINESE"
-			, message: "输入有误，表达式中不能含有中文字符，不要忘了关闭中文输入法噢"
-		})
+        throw new Error("Engine Error, Input Has Chinese Characters")
 	}
 	//Error control and why it can't handle null case
 	if(!exp){
@@ -771,10 +767,12 @@ function compute(exp){
 	try {
 		result = parseStart().toSympy()
 	} catch(err) {
-		throw new errors.InputError({
-			errorType: "INPUTERROR"
-			, message: "输入有误"
-		})
+		// throw new errors.InputError({
+		// 	errorType: "INPUTERROR"
+		// 	, message: "输入有误"
+        // })
+        console.log(err)
+        throw new Error("Input Error")
 	}
 	return result
 }

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MichaelDuo/latex-to-sympy/issues"
   },
-  "homepage": "https://github.com/MichaelDuo/latex-to-sympy#readme"
+  "homepage": "https://github.com/MichaelDuo/latex-to-sympy#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
 }
