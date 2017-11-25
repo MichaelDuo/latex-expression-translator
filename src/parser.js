@@ -92,7 +92,7 @@ const LatexFunction = {
 	"\\csc": {tokenEqv:"csc" ,token_type: TOKENTYPE.LATEX_FUNCTION},
 	"\\arctan": {tokenEqv:"atan" ,token_type: TOKENTYPE.LATEX_FUNCTION},
 	"\\cot": {tokenEqv:"cot" ,token_type: TOKENTYPE.LATEX_FUNCTION},
-	"\\lg": {tokenEqv:"log" ,token_type: TOKENTYPE.LATEX_FUNCTION},//if delete this lg doesn't work
+	"\\lg": {tokenEqv:"log" ,token_type: TOKENTYPE.LATEX_FUNCTION},
 	"\\log": {tokenEqv:"log" ,token_type: TOKENTYPE.LATEX_FUNCTION},
 	"\\ln": {tokenEqv:"ln" ,token_type: TOKENTYPE.LATEX_FUNCTION},
 	"\\sh": {tokenEqv:"sinh" ,token_type: TOKENTYPE.LATEX_FUNCTION},
