@@ -1,5 +1,3 @@
-
-
 function EqNode(left, right) {
   this.left = left;
   this.right = right;

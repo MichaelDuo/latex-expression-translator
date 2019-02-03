@@ -1,14 +1,14 @@
 /* eslint-disable no-use-before-define */
-const _ = require('lodash');
-const ConstantNode = require('./nodes/constant.js');
-const SymbolNode = require('./nodes/symbol.js');
-const OperatorNode = require('./nodes/operator.js');
-const ParenthesisNode = require('./nodes/parenthesis.js');
-const LatexFunctionNode = require('./nodes/latex-function.js');
-const AbsNode = require('./nodes/abs.js');
-const RootNode = require('./nodes/root.js');
-const LogNode = require('./nodes/log.js');
-const EqNode = require('./nodes/eq.js');
+import _ from 'lodash';
+import ConstantNode from './nodes/constant';
+import SymbolNode from './nodes/symbol';
+import OperatorNode from './nodes/operator';
+import ParenthesisNode from './nodes/parenthesis';
+import LatexFunctionNode from './nodes/latex-function';
+import AbsNode from './nodes/abs';
+import RootNode from './nodes/root';
+import LogNode from './nodes/log';
+import EqNode from './nodes/eq';
 
 const TOKENTYPE = {
   NULL: 0,

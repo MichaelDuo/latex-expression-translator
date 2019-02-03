@@ -1,0 +1,16 @@
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "esmodules": true,
+            "node": true,
+            "chrome": "58",
+            "ie": "11",
+          },
+          "useBuiltIns": "usage"
+        }
+      ]
+    ]
+  }
