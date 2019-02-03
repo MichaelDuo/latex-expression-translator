@@ -4,7 +4,8 @@
   "description": "Transform Latex Equation To Sympy",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test"
+    "test": "jest",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,12 @@
   },
   "homepage": "https://github.com/MichaelDuo/latex-to-sympy#readme",
   "dependencies": {
-    "lodash": "^4.17.4",
-    "mocha": "^4.0.1"
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^24.0.0"
   }
 }
