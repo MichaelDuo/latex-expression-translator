@@ -1,5 +1,3 @@
-
-
 /* eslint-disable no-use-before-define */
 const _ = require('lodash');
 const ConstantNode = require('./nodes/constant.js');
@@ -615,7 +613,7 @@ function parseLatexFunction() {
             logRoot = new ConstantNode(token, 'number');
             getToken();
           } else {
-            console.log('Error?');
+            throw new Error('Unexpected Error');
           }
         }
         if (token === '{' || token === '(') {
