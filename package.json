@@ -5,7 +5,7 @@
   "main": "./lib/parser.js",
   "scripts": {
     "clean": "rimraf lib",
-    "test": "jest --coverage",
+    "test": "jest",
     "lint": "eslint .",
     "build": "babel src --out-dir lib",
     "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
@@ -18,6 +18,13 @@
     "type": "git",
     "url": "git+https://github.com/MichaelDuo/latex-expression-translator.git"
   },
+  "keywords": [
+    "latex",
+    "sympy",
+    "translator",
+    "math",
+    "expression"
+  ],
   "author": "MichaelDuo",
   "license": "MIT",
   "bugs": {
@@ -34,6 +41,7 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "babel-plugin-add-module-exports": "^1.0.0",
+    "coveralls": "^3.0.2",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
