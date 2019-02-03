@@ -1,6 +1,6 @@
 latex-expression-translator
 ===========================
-[![Build Status](https://travis-ci.com/MichaelDuo/latex-to-sympy.svg?branch=master)](https://travis-ci.com/MichaelDuo/latex-to-sympy)
+[![Build Status](https://travis-ci.org/MichaelDuo/latex-expression-translator.svg?branch=master)](https://travis-ci.org/MichaelDuo/latex-expression-translator)
 
 A javascript library which transforms Latex Expression To Sympy Expression
 
