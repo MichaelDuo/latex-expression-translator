@@ -740,4 +740,4 @@ function hasChinese(exp) {
   return chineseReg.test(exp);
 }
 
-exports.compute = compute;
+export default compute;

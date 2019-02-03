@@ -1,4 +1,4 @@
-import { compute as translate } from '../src/parser';
+import translate from '../src/parser';
 
 test("#1 Should be: '(123+567)' if passed: '123+567'", () => {
   expect(translate('123+567')).toEqual('(123+567)');
