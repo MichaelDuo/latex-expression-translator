@@ -2,6 +2,8 @@ latex-expression-translator
 ===========================
 [![Build Status](https://travis-ci.org/MichaelDuo/latex-expression-translator.svg?branch=master)](https://travis-ci.org/MichaelDuo/latex-expression-translator)
 
+[![codecov](https://codecov.io/gh/michaelduo/latex-expression-translator/branch/master/graph/badge.svg)](https://codecov.io/gh/MichaelDuo/latex-expression-translator)
+
 A javascript library which transforms Latex Expression To Sympy Expression
 
 Install
