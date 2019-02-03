@@ -12,5 +12,6 @@
           "useBuiltIns": "usage"
         }
       ]
-    ]
-  }
+    ],
+    "plugins": ["add-module-exports"]
+}
